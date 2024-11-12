@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --theme-color: #fe4137;
+}
+
 body {
   padding: 0;
   margin: 0 auto;
@@ -50,7 +54,7 @@ footer {
   position: fixed;
   background-color: whitesmoke;
   margin-bottom: 30px;
-  background-image: linear-gradient(to bottom, #aeacff, white);
+  background-image: linear-gradient(to bottom, var(--theme-color), white);
   top: 0;
   width: 100%;
   z-index: 1;
@@ -86,7 +90,7 @@ footer {
   margin: 0px 0px;
   border: 0;
   height: 20px;
-  background: #aeacff;
+  background: var(--theme-color);
 }
 
 .header-block {
@@ -259,7 +263,7 @@ section .heading {
   margin: 0px 0px;
   border: 0;
   height: 4px;
-  background: #aeacff;
+  background: var(--theme-color);
 }
 
 .datatable {
@@ -316,7 +320,7 @@ section .heading {
 .btn:hover {
   background-color: #a9c4f5;
   border-color: #a9c4f5;
-  color: #aeacff;
+  color: var(--theme-color);
 }
 
 .button-list .heading {
@@ -328,7 +332,7 @@ section .heading {
 
 .button-list .heading u {
   text-decoration: none;
-  border-bottom: 6px solid #aeacff;
+  border-bottom: 6px solid var(--theme-color);
 }
 
 
