@@ -9,7 +9,7 @@
 body {
   padding: 0;
   margin: 0 auto;
-  font-family: Optima, Palatino, Georgia, "Helvetica Neue", Helvetica;
+  font-family: "Noto Sans KR", "Poppins", "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   /* max-width: 950px; */
@@ -309,7 +309,7 @@ section .heading {
 .btn {
   background-color: gainsboro;
   border-color: gainsboro;
-  color: #6966ff;
+  color: var(--theme-color);
   font-size: 1.2em;
   margin-right: 20px;
   margin-bottom: 10px;
