@@ -91,20 +91,9 @@
     <section id="introduction">
       <div class="overview">
         <p class="doublealign">
-          <!-- The main goal of <strong>JailbreakBench</strong> is to systematically track progress of jailbreaking attacks and defenses on frontier LLMs.
-          We strive to be as reproducible and open as possible by providing jailbreak artifacts that include state-of-the-art jailbreaking prompts
-          (see our <a href="https://github.com/JailbreakBench/jailbreakbench">library</a> for more details).  -->
-          <!-- Additionally, we plan to collect a fully open-source dataset of jailbreaking prompts to enable safety-enhancing training. -->
-          Jailbreak attacks cause large language models (LLMs) to generate harmful, unethical, or otherwise
-unwanted content. Evaluating these attacks presents a number of challenges, and the current
-landscape of benchmarks and evaluation techniques is fragmented. First, assessing whether LLM
-responses are indeed harmful requires open-ended evaluations which are not yet standardized.
-Second, existing works compute attacker costs and success rates in incomparable ways. Third,
-some works lack reproducibility as they withhold adversarial prompts or code, and rely on changing
-proprietary APIs for evaluation. Consequently, navigating the current literature and tracking
-progress can be challenging.
+          현재 대규모 언어 모델(LLM)은 다양한 분야에서 중요한 역할을 하고 있으며, 그 성능과 활용도가 날로 증가하고 있습니다. 그러나 최근 연구에 의하면 대규모 언어 모델(LLM)에 대한 다양한 공격이 가능하며, 그 중에서도 탈옥 공격(Jailbreak)은 LLM이 해롭거나 비윤리적이거나 기타 원치 않는 콘텐츠를 생성하게 유도합니다. LLM에 대한 공격 연구는 아직 초기 단계에 있으며, 특히나 한국어 기반 LLM에 대해서는 기존 공격에 대한 안전성이나 이를 높이기 위한 연구가 상대적으로 적은 편입니다. LLM을 대상으로 한 공격 및 공격의 위험성을 평가하는 것은 LLM 배포자 및 사용자의 안전성과 신뢰성을 보장하는 데 있어 필수적입니다.
 <br><br>
-To address this, we introduce JailbreakBench, a centralized benchmark with the following components:
+이에 본 연구진은 해외 선행 연구(<a href="https://arxiv.org/abs/2404.01318">JailbreakBecnh</a>)를 바탕으로, 한국어 LLM 모델에 대한 표준화된 강건성 벤치마크를 제공합니다.
 <ol>
   <li><strong>Repository of jailbreak artifacts.</strong> An evolving dataset of state-of-the-art
     adversarial prompts at <a href="https://github.com/JailbreakBench/artifacts">https://github.com/JailbreakBench/artifacts</a>, referred to as jailbreak artifacts, which are explicitly required for submissions
