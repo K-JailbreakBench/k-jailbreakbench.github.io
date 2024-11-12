@@ -93,19 +93,16 @@
         <p class="doublealign">
           현재 대규모 언어 모델(LLM)은 다양한 분야에서 중요한 역할을 하고 있으며 그 성능과 활용도가 날로 증가하고 있습니다. 그러나 최근 연구에 의하면 LLM에 대한 다양한 공격이 가능하며, 그 중에서도 탈옥 공격(Jailbreak)은 LLM이 해롭거나 비윤리적이거나 유해한 콘텐츠를 생성하는데에 악용되고 있습니다. LLM에 대한 공격 연구는 아직 초기 단계에 있으며, 특히 한국어 기반 LLM에 대해서는 기존 공격에 대한 강건성이나 이를 높이기 위한 연구가 상대적으로 적은 편입니다. LLM을 대상으로 한 공격 및 공격의 위험성을 평가하는 것은 LLM 배포자 및 사용자의 안전성과 신뢰성을 보장하는 데 있어 필수적입니다.
 <br><br>
-이에 본 연구진은 해외 선행 연구(<a href="https://arxiv.org/abs/2404.01318">JailbreakBecnh</a>)를 확장하여, 한국어 LLM 모델에 대한 표준화된 강건성 벤치마크를 제공합니다.
+이에 본 연구진은 해외 선행 연구(<a href="https://arxiv.org/abs/2404.01318">JailbreakBench</a>)를 확장하여, 한국어 LLM 모델에 대한 표준화된 강건성 벤치마크를 제공합니다.
 <ol>
-  <li><strong>Repository of jailbreak artifacts.</strong> An evolving dataset of state-of-the-art
-    adversarial prompts at <a href="https://github.com/JailbreakBench/artifacts">https://github.com/JailbreakBench/artifacts</a>, referred to as jailbreak artifacts, which are explicitly required for submissions
-    to our benchmark to ensure reproducibility.</li>
-  <li><strong>Standardized evaluation framework.</strong> Our library at <a href="https://github.com/JailbreakBench/jailbreakbench">https://github.com/JailbreakBench/jailbreakbench</a> that includes a clearly defined threat model, system prompts, chat templates, and scoring functions.</li>
-  <li><strong>Leaderboard.</strong> Our leaderboards here (<a href="https://jailbreakbench.github.io/">https://jailbreakbench.github.io/</a>) that track the performance of attacks and defenses for various LLMs.</li>
-  <li><strong>Dataset.</strong> A representative dataset named <em>JBB-Behaviors</em> at <a href="https://huggingface.co/datasets/JailbreakBench/JBB-Behaviors">https://huggingface.co/datasets/JailbreakBench/JBB-Behaviors</a> composed of 100 distinct misuse behaviors (with 55% original examples and the rest sourced from <a href="https://github.com/llm-attacks/llm-attacks/blob/main/data/advbench/harmful_behaviors.csv" target="_blank">AdvBench</a> and <a href="https://trojandetection.ai/" target="_blank">TDC</a>/<a href="https://www.harmbench.org/" target="_blank">HarmBench</a>) divided into ten broad categories corresponding to <a href="https://openai.com/policies/usage-policies" target="_blank">OpenAI's usage policies</a>. Moreover, now it is complemented with 100 benign behaviors that can be used to quickly evaluate overrefusal rates for new models and defenses.</li>
+  <li><strong>한국어 LLM 대상 공격 및 평가 프레임워크 제공.</strong> 알려진 LLM 대상 공격을 한국어 LLM에 적용 가능하게 확장하고, 명확하게 정의된 위협 공격, 시스템 프롬프트 및 강건성 측정 함수를 제공합니다. 보다 자세한 사항은 <a href="https://github.com/K-JailbreakBench/K-JailbreakBench">https://github.com/K-JailbreakBench/K-JailbreakBench</a>에서 확인할 수 있습니다.</li>
+  <li><strong>공개 한국어 LLM의 강건성 수치.</strong> 공개 한국어 LLM에 대한 공격을 실행하고, 이에 대한 수치를 정리하여 제공합니다. 다양한 한국어 LLM에 대한 공격 및 방어 성능을 추적할 수 있습니다.</li>
+  <li><strong>공격 데이터셋 제공.</strong> 한국어 LLM에 대한 주요 공격 문장들을 확보하여, 강건성 평가가 높은 접근성을 가질 수 있도록 데이터셋을 제공합니다. 이는 추후 공개될 예정입니다.</li>
 </ol>
-We have carefully considered the potential ethical implications of releasing this benchmark,
+<!-- We have carefully considered the potential ethical implications of releasing this benchmark,
 and believe that it will be a net positive for the community. Our jailbreak artifacts can expedite
 safety training for future models. Over time, we will expand and adapt the benchmark to reflect
-technical and methodological advances in the research community.
+technical and methodological advances in the research community. -->
       <div class="vspace50"></div>
     </section>
 
@@ -113,11 +110,11 @@ technical and methodological advances in the research community.
     <div id="leaderboard" class="container button-list">
       <div class="heading">
         <u>
-          Available Leaderboards
+          벤치마크
         </u>
       </div>
-      <a class="btn btn-secondary" href="#div_table_open_source_heading">Open-Source Models</a>
-      <a class="btn btn-secondary" href="#div_table_closed_source_heading">Closed-Source Models</a>
+      <a class="btn btn-secondary" href="#div_table_open_source_heading">다국어 기반 공격 성공률 지표</a>
+      <a class="btn btn-secondary" href="#div_table_closed_source_heading">한국어 기반 공격 성공률 지표</a>
       <div class="vspace30"></div>
     </div>
 
@@ -125,7 +122,7 @@ technical and methodological advances in the research community.
     <section class="container" id="div_table_open_source_heading">
       <div class="heading">
         <p class="leaderboard_title">
-          Leaderboard: Open-Source Models
+          다국어 기반 공격 성공률 지표
         </p>
       </div>
 
@@ -135,7 +132,7 @@ technical and methodological advances in the research community.
     <section class="container" id="div_table_closed_source_heading">
       <div class="heading">
         <p class="leaderboard_title">
-          Leaderboard: Closed-Source Models
+          한국어 기반 공격 성공률 지표
         </p>
       </div>
 
@@ -162,7 +159,7 @@ technical and methodological advances in the research community.
 
 
     <div class="vspace50"></div>
-
+<!-- 
     <section id="contribute">
       <div class="heading">
         <p>Contribute to JailbreakBench</p>
@@ -198,7 +195,7 @@ technical and methodological advances in the research community.
         year={2024}
 }</code></pre>
 
-    </section>
+    </section> -->
 
 
     <!-- <section id="contribute">
