@@ -96,7 +96,7 @@
 이에 본 연구진은 해외 선행 연구(<a href="https://arxiv.org/abs/2404.01318">JailbreakBench</a>)를 확장하여, 한국어 LLM 모델에 대한 표준화된 강건성 벤치마크를 제공합니다.
 <ol>
   <li><strong>한국어 LLM 대상 공격 및 평가 프레임워크 제공.</strong> 알려진 LLM 대상 공격을 한국어 LLM에 적용 가능하게 확장하고, 명확하게 정의된 위협 공격, 시스템 프롬프트 및 강건성 측정 함수를 제공합니다. 보다 자세한 사항은 <a href="https://github.com/K-JailbreakBench/K-JailbreakBench">https://github.com/K-JailbreakBench/K-JailbreakBench</a>에서 확인할 수 있습니다.</li>
-  <li><strong>공개 한국어 LLM의 강건성 수치.</strong> 공개 한국어 LLM에 대한 공격을 실행하고, 이에 대한 수치를 정리하여 제공합니다. 다양한 한국어 LLM에 대한 공격 및 방어 성능을 추적할 수 있습니다.</li>
+  <li><strong>공개 한국어 LLM의 강건성 수치 제공.</strong> 공개 한국어 LLM에 대한 공격을 실행하고, 이에 대한 수치를 정리하여 제공합니다. 다양한 한국어 LLM에 대한 공격 및 방어 성능을 추적할 수 있습니다.</li>
   <li><strong>공격 데이터셋 제공.</strong> 한국어 LLM에 대한 주요 공격 문장들을 확보하여, 강건성 평가가 높은 접근성을 가질 수 있도록 데이터셋을 제공합니다. 이는 추후 공개될 예정입니다.</li>
 </ol>
 <!-- We have carefully considered the potential ethical implications of releasing this benchmark,
@@ -122,7 +122,7 @@ technical and methodological advances in the research community. -->
     <section class="container" id="div_table_open_source_heading">
       <div class="heading">
         <p class="leaderboard_title">
-          다국어 기반 공격 성공률 지표
+          다국어 기반 공격 취약성 지표
         </p>
       </div>
 
@@ -132,7 +132,7 @@ technical and methodological advances in the research community. -->
     <section class="container" id="div_table_closed_source_heading">
       <div class="heading">
         <p class="leaderboard_title">
-          한국어 기반 공격 성공률 지표
+          한국어 기반 공격 취약성 지표
         </p>
       </div>
 
@@ -162,12 +162,17 @@ technical and methodological advances in the research community. -->
 
     <section id="contribute">
       <div class="heading">
-        <p>연구 협력 문의</p>
+        <p>연구 협력 및 기여</p>
       </div>
-      We welcome contributions in terms of both new attacks and defenses. Please check
+      본 벤치마크는 새로운 공격과 방어 기여를 환영합니다. 연구 협력 및 기여는 아래 메일로 연락 부탁드립니다.
+      <ul>
+          <li>동국대학교 컴퓨터학과 이우진 교수: <a href="wj926@dgu.ac.kr" target="_blank">wj926@dgu.ac.kr</a></li>
+          <li>중앙대학교 산업보안학과 김호기 교수: <a href="wj926@dgu.ac.kr" target="_blank">wj926@dgu.ac.kr</a></li>
+      </ul>
+      <!-- We welcome contributions in terms of both new attacks and defenses. Please check
           <a href="https://github.com/JailbreakBench/jailbreakbench/tree/main#submitting-a-new-attack-to-the-jailbreakbench-leaderboard">here</a> and
           <a href="https://github.com/JailbreakBench/jailbreakbench/tree/main#submitting-a-new-defense-to-jailbreakbench">here</a>
-          for more details. Feel free to contact us for any questions or suggestions.
+          for more details. Feel free to contact us for any questions or suggestions. -->
     </section>
 
 
@@ -178,7 +183,7 @@ technical and methodological advances in the research community. -->
         <p>인용</p>
       </div>
 
-      본 문서, 코드 및 데이터셋을 활용한다면 아래의 인용을 부탁드립니다. <!-- 
+      본 문서, 코드 및 데이터셋을 활용할 시 아래 인용을 부탁드립니다. <!-- 
       <div class="vspace10"></div>
       <ul>
           <li><a href="https://github.com/llm-attacks/llm-attacks?tab=readme-ov-file#citation" target="_blank">AdvBench</a></li>
