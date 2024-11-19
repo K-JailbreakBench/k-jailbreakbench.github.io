@@ -113,13 +113,35 @@ technical and methodological advances in the research community. -->
           벤치마크
         </u>
       </div>
-      <a class="btn btn-secondary" href="#div_table_open_source_heading">다국어 기반 공격 성공률 지표</a>
-      <a class="btn btn-secondary" href="#div_table_closed_source_heading">한국어 기반 공격 성공률 지표</a>
+      <a class="btn btn-secondary" href="#div_table_en_source_heading">다국어 기반 공격 성공률 지표</a>
+      <a class="btn btn-secondary" href="#div_table_ko_source_heading">한국어 기반 공격 성공률 지표</a>
       <div class="vspace30"></div>
     </div>
 
+    <!-- <a class="btn btn-secondary" href="#div_table_open_source_heading">다국어 기반 공격 성공률 지표</a>
+    <a class="btn btn-secondary" href="#div_table_closed_source_heading">한국어 기반 공격 성공률 지표</a> -->
 
-    <section class="container" id="div_table_open_source_heading">
+    <section class="container" id="div_table_en_source_heading">
+      <div class="heading">
+        <p class="leaderboard_title">
+          다국어 기반 공격 취약성 지표
+        </p>
+      </div>
+
+      <div id="div_table_en_source"></div>
+    </section>
+
+    <section class="container" id="div_table_ko_source_heading">
+      <div class="heading">
+        <p class="leaderboard_title">
+          한국어 기반 공격 취약성 지표
+        </p>
+      </div>
+
+      <div id="div_table_ko_source"></div>
+    </section>
+
+    <!-- <section class="container" id="div_table_open_source_heading"></section>
       <div class="heading">
         <p class="leaderboard_title">
           다국어 기반 공격 취약성 지표
@@ -137,7 +159,7 @@ technical and methodological advances in the research community. -->
       </div>
 
       <div id="div_table_closed_source"></div>
-    </section>
+    </section> -->
 
 
     <!-- <div class="vspace30"></div>
@@ -193,12 +215,16 @@ technical and methodological advances in the research community. -->
       <div class="vspace10"></div>
       Moreover, consider citing our whitepaper if you use the datasets, reference our leaderboard, or if you are using our evaluation library: -->
       <div class="vspace10"></div>
-      <pre><code>@inproceedings{chao2024jailbreakbench,
-        title={JailbreakBench: An Open Robustness Benchmark for Jailbreaking Large Language Models},
-        author={Patrick Chao and Edoardo Debenedetti and Alexander Robey and Maksym Andriushchenko and Francesco Croce and Vikash Sehwag and Edgar Dobriban and Nicolas Flammarion and George J. Pappas and Florian Tramèr and Hamed Hassani and Eric Wong},
-        booktitle={NeurIPS Datasets and Benchmarks Track},
-        year={2024}
-}</code></pre>
+      <pre><code>
+        
+      </code></pre>
+
+<!-- @inproceedings{chao2024jailbreakbench,
+  title={JailbreakBench: An Open Robustness Benchmark for Jailbreaking Large Language Models},
+  author={Patrick Chao and Edoardo Debenedetti and Alexander Robey and Maksym Andriushchenko and Francesco Croce and Vikash Sehwag and Edgar Dobriban and Nicolas Flammarion and George J. Pappas and Florian Tramèr and Hamed Hassani and Eric Wong},
+  booktitle={NeurIPS Datasets and Benchmarks Track},
+  year={2024}
+} -->
 
     </section>
 
@@ -319,7 +345,7 @@ technical and methodological advances in the research community. -->
     }
   </script>
   <script>
-    $("#div_table_open_source").load("./tables/table_open_source.html");
-    $("#div_table_closed_source").load("./tables/table_closed_source.html");
+    $("#div_table_en_source").load("./tables/table_en_source.html");
+    $("#div_table_ko_source").load("./tables/table_ko_source.html");
   </script>
 </body>

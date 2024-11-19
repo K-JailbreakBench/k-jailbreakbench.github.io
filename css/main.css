@@ -369,11 +369,20 @@ table .sr_gpt4 {
 table .sr_clsf {
   width: 8%;
 }
+table .sr_h_clsf {
+  width: 7%;
+}
+table .sr_g_clsf {
+  width: 7%;
+}
 table .queries {
-  width: 11%;
+  width: 7%;
 }
 table .jb_artifacts {
   width: 9%;
+}
+table .dataset {
+  width: 7%;
 }
 
 table .aatd,
